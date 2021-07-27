@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="font/stylesheet.css">
   <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet">
 </head>
-<body>
+<body onscroll="scrolled()" onload="randomRotateAndOpacity()">
   <div class="container">
     <div class="firstBlock parallax">
       <div class="firstBlockTop">
@@ -42,11 +42,11 @@
     </div>
     <div class="containerSticky">
       <div class="secondBlockLeft">
-        <div class="secondBlockLeftMenu">
-          <p class="bold blue">— Что мы делаем?</p>
-          <p class="bold gray">Наши услуги</p>
-          <p class="bold gray">Портфолио</p>
-          <p class="bold gray">Оформить заявку</p>
+        <div class="secondBlockLeftMenu" id="secondBlockMenu">
+          <p class="boldMenu">Что мы делаем?</p>
+          <p class="boldMenu">Наши услуги</p>
+          <p class="boldMenu">Портфолио</p>
+          <p class="boldMenu">Оформить заявку</p>
         </div>
       </div>
     <div class="secondBlock">
@@ -85,9 +85,9 @@
     </div>
     <div class="thirdBlock">
       <div class="thirdBlockLines">
-        <div class="firstLine"></div>
-        <div class="secondLine"></div>
-        <div class="thirdLine"></div>
+        <div class="firstLine" id='firstLine'></div>
+        <div class="secondLine" id='secondLine'></div>
+        <div class="thirdLine" id='thirdLine'></div>
       </div>
       <div class="thirdBlockRight">
         <h2>Мы предлагаем</h2>
@@ -229,5 +229,7 @@
 </div>
 </div>
 </div>
+
+<script src="script/script.js" charset="utf-8"></script>
 </body>
 </html>

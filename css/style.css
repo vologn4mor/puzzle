@@ -12,6 +12,11 @@ li {
   list-style-type: none;
 }
 
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .firstBlock {
   background-image: url(../img/firstBlock.png);
   height: 1002px;
@@ -96,8 +101,12 @@ li {
   cursor: pointer;
 }
 
-.bold {
+.bold, .boldMenu {
   font-weight: bold;
+}
+
+.boldMenu {
+  color: gray;
 }
 
 .secondBlock {
@@ -143,6 +152,7 @@ span.blue {
 
 .secondBlockLeftMenu p{
   margin-bottom: 40px;
+  transition: 0.5s;
 }
 
 .gray {
@@ -175,7 +185,7 @@ span.blue {
 }
 
 .containerSticky {
-  height: 3900px;
+  height: 4550px;
 }
 
 .thirdBlock {
@@ -211,15 +221,19 @@ margin-top: 900px;
 }
 
 .thirdBlockLines {
-  position: absolute;
+  position: relative;
   left: -50px;
   z-index: 0;
+}
+
+.thirdBlockLines div {
+  transition: 0.5s;
 }
 
 .thirdBlockRight {
   color: white;
   float: right;
-  margin-top: 300px;
+  margin-top: 60px;
   margin-right: 200px;
 }
 
@@ -497,49 +511,19 @@ right: 1px;
 }
 
 .parallax {
-    /* The image used */
-    /* background-image: url("img_parallax.jpg"); */
-
-    /* Set a specific height */
     min-height: 500px;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-
-/* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle/index.html# */
-
-/* .trekutnik {
-   width: 20px;
-  height: 20px;
-  background-color: white;
-  position: absolute;
-  bottom: -39%;
-} */
-
-
-/* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle/index.html# */
-
 .trekutnik {
+  height: 10px;
+  position: relative;
+  top: 155.6px;
   border: 170px solid transparent;
   border-bottom: 0px solid transparent;
   border-right: 0px solid transparent;
-  border-left: 1920px solid white;
-}
-
-/* style.css | file:///G:/NextCloud/Projects/WORK/Puzzle/css/style.css */
-
-.trekutnik {
-  /* width: 20px; */
-  /* height: 20px; */
-  /* background-color: white; */
-  /* bottom: -39%; */
-  /* position: absolute;
-  bottom: -41.5%; */
-  position: absolute;
-top: 88.7%;
+  border-left: 1903px solid white;
 }
