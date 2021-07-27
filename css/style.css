@@ -1,0 +1,542 @@
+* {
+  font-family: 'Gotham Pro';
+  font-weight: 300;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.firstBlock {
+  background-image: url(../img/firstBlock.png);
+  height: 1002px;
+}
+
+.firstBlockTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: 94px;
+  margin-top: 26px;
+}
+
+.firstBlockRight {
+ background-color: white;
+ height: 68px;
+ display: flex;
+ padding: 0px 100px;
+ height: 68px;
+}
+
+.firstBlockButtons {
+  display: flex;
+  margin: auto 0;
+  justify-content: space-between;
+  width: 732px;
+}
+
+.firstBlockMain h1{
+  font-weight: 300;
+  font-family: Gotham Pro;
+  font-style: normal;
+  font-size: 100px;
+  line-height: 120px;
+  margin: 0;
+}
+
+.firstBlockMain {
+  max-width: 1139px;
+
+  margin-left: 200px;
+  margin-top: 157px;
+  color: white;
+}
+
+.firstBlockMain > p:nth-child(1) {
+  margin: 0;
+}
+
+.firstBlockMain > p:nth-child(3) {
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.firstBlockMainButtons a{
+  color: white;
+  padding: 22px 66px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.firstBlockMainButtons > a:nth-child(1) {
+ background-color: #5455C8;
+ margin-right: 30px;
+}
+
+.firstBlockMainButtons > a:nth-child(2) {
+ background-color: #434348;
+}
+
+.firstBlockMainButtons {
+  margin-top: 60px;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.secondBlock {
+display: flex;
+max-width: 1505px;
+margin: 0 auto;
+justify-content: space-between;
+}
+
+.secondBlockRight {
+max-width: 1045px;
+}
+
+.secondBlockRight>div{
+  display: flex;
+}
+
+.secondBlockRight div .blue {
+  margin-top: 20px;
+  margin-right: 50px;
+  font-size: 26px;
+}
+
+.blue {
+  color: #3335CF;
+}
+
+.secondBlockRight > h2:nth-child(1) {
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 600;
+  max-width: 732px;
+}
+
+span.blue {
+  font-weight: 600;
+}
+
+.secondBlockRight>div>div>p{
+  font-size: 18px;
+  line-height: 32px;
+}
+
+.secondBlockLeftMenu p{
+  margin-bottom: 40px;
+}
+
+.gray {
+  color: #BCBCBC;
+}
+.secondBlockLeft {
+  height: 0px;
+  position: sticky;
+  top: 70px;
+  z-index: 1;
+}
+
+.secondBlock {
+  float: right;
+}
+
+.secondBlockRight > h2:nth-child(1) {
+  margin-top: 0px;
+  color: black;
+}
+
+.secondBlockLeftMenu {
+  max-width: 200px;
+  margin-left: 100px;
+}
+
+.secondBlockRight {
+  margin-right: 315px;
+  margin-left: 300px;
+}
+
+.containerSticky {
+  height: 3900px;
+}
+
+.thirdBlock {
+  background-image: url(../img/thirdBlock.png);
+  height: 1532px;
+}
+
+.thirdBlock {
+margin-top: 900px;
+}
+
+.thirdBlockLines div {
+  margin-bottom: 30px;
+}
+
+.firstLine, .secondLine, .thirdLine {
+  background-color: #0f0f0f;
+  height: 10px;
+  rotate: 4deg;
+  z-index: -1;
+}
+
+.firstLine {
+  width: 100px;
+}
+
+.secondLine {
+  width: 150px;
+}
+
+.thirdLine {
+  width: 500px;
+}
+
+.thirdBlockLines {
+  position: absolute;
+  left: -50px;
+  z-index: 0;
+}
+
+.thirdBlockRight {
+  color: white;
+  float: right;
+  margin-top: 300px;
+  margin-right: 200px;
+}
+
+.thirdBlockList {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+}
+
+.thirdBlockList div{
+  width: 450px;
+  height: 320px;
+}
+
+.thirdBlockList a {
+  color: white;
+}
+
+.thirdBlockRight {
+  display: flex;
+}
+
+.thirdBlockRight {
+  flex-direction: column;
+}
+
+.thirdBlockRightMain {
+  display: flex;
+}
+
+.thirdBlockList li {
+  margin-bottom: 20px;
+}
+
+.thirdBlockList ul {
+  padding-left: 20px;
+}
+
+.thirdBlockRight > h2:nth-child(1) {
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.thirdBlockListName {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.fourthBlockMainFirst, .fourthBlockMainSecond, .fourthBlockMainThird, .fourthBlockMainFourth {
+  height: 700px;
+  width: 580px;
+}
+
+.fourthBlockMainFirst {
+  background-image: url(../img/fourthBlock11.png);
+}
+
+.fourthBlockMainSecond {
+  background-image: url(../img/fourthBlock21.png);
+}
+
+.fourthBlockMainThird {
+  background-image: url(../img/fourthBlock31.png);
+}
+
+.fourthBlockMainFourth {
+  background-image: url(../img/fourthBlock41.png);
+}
+
+.fourthBlockMain {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1360px;
+}
+
+.fourthBlockMain>div {
+  margin-bottom: 100px;
+  margin-right: 100px;
+}
+
+.fourthBlockMainSecond, .fourthBlockMainFourth {
+  margin-top: 70px;
+}
+.fourthBlockMainThird > a:nth-child(3) {
+  display: flex;
+}
+
+.fourthBlockMainThird > a:nth-child(3) > img:nth-child(2) {
+  margin-left: 15px;
+}
+
+.fourthBlockOurs {
+  font-weight: normal;
+  font-size: 55px;
+  line-height: 60px;
+  margin-top: 0px;
+}
+
+.fourthBlockMainText {
+  color: white;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.fourthBlockMainFirst > div:nth-child(2) {
+  max-width: 488px;
+  margin: 100px auto;
+}
+
+.fourthBlockMainSecond > div:nth-child(2) {
+  max-width: 470px;
+  margin: 100px auto;
+}
+
+.fourthBlockMainThird > div:nth-child(2) {
+  max-width: 455px;
+  margin: 70px auto;
+}
+
+.fourthBlockMainFourth > div:nth-child(2) {
+  max-width: 307px;
+  margin: 0 auto;
+}
+
+.fifthBlock {
+  background-image: url(../img/fifthBlock.png);
+  height: 1437px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.fourthBlock {
+  max-width: 1360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0 auto;
+  margin-left: 28.5%;
+}
+
+.fifthBlock p, h2{
+  color: white;
+}
+
+.fifthBlock, .fifthBlockLeftDown {
+  display: flex;
+}
+
+.fifthBlockLeftDown>div>div {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 270px;
+}
+
+.fifthBlockLeftSocial>div>div>a {
+  display: flex;
+}
+
+.fifthBlockRight, .fifthBlockLeft {
+  margin-top: 500px;
+}
+
+.fifthBlockLeftUp img {
+  border: 1px solid white;
+}
+
+.fifthBlockLeft h2 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 33px;
+}
+
+.fifthBlockLeftDown {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fifthBlockLeftDown {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fourthBlockOurs {
+  color: black;
+}
+
+.fifthBlockLeftSocialContainer>div {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.fifthBlockLeftDown img{
+  margin-right: 10px;
+}
+
+.vodafone img {
+  margin-left: 4px;
+}
+
+.fifthBlockMain {
+  display: flex;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.fifthBlockRightUp > h2:nth-child(1) {
+  font-size: 70px;
+  line-height: 90px;
+  font-weight: 600;
+  max-width: 479px;
+  margin-left: 100px;
+}
+
+.fifthBlockRightUp > h2:nth-child(1) {
+  font-size: 70px;
+  line-height: 90px;
+  font-weight: 600;
+  max-width: 479px;
+  margin-left: 100px;
+}
+
+.fifthBlockRightUp > p:nth-child(2) {
+  max-width: 455px;
+  font-size: 21px;
+  line-height: 30px;
+  margin-left: 100px;
+}
+
+.fifthBlockRightUp {
+  margin-bottom: 79px;
+}
+
+.fifthBlockRightDown {
+  display: flex;
+  border: 1px solid white;
+}
+
+input[type=phone] {
+  background-color: #3335CF;
+  border: 0px solid white;
+  outline: none;
+  color: white;
+}
+
+input[type=phone]:focus {
+  border: 0px solid white;
+  outline: none;
+}
+
+
+
+.fifthBlockRightDown {
+background-color: #3335CF;
+position: relative;
+right: 1px;
+}
+
+.fifthBlockRightDown {
+  justify-content: space-around;
+  max-height: 244px;
+  height: 100%;
+}
+
+.submitPhone {
+  max-height: 100px;
+  margin: auto 0;
+}
+
+.fifthBlockLeftSocial > p:nth-child(3) {
+ float: right;
+ color: #929292;
+ font-size: 16px;
+ line-height: 15px;
+ margin-top: 55px;
+}
+
+.parallax {
+    /* The image used */
+    /* background-image: url("img_parallax.jpg"); */
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle/index.html# */
+
+.trekutnik {
+  /* width: 20px;
+  height: 20px;
+  background-color: white; */
+  position: absolute;
+  bottom: -39%;
+}
+
+
+/* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle/index.html# */
+
+.trekutnik {
+  border: 170px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-left: 1920px solid white;
+}
+
+/* style.css | file:///G:/NextCloud/Projects/WORK/Puzzle/css/style.css */
+
+.trekutnik {
+  /* width: 20px; */
+  /* height: 20px; */
+  /* background-color: white; */
+  /* bottom: -39%; */
+  bottom: -41.5%;
+}
