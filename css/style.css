@@ -513,13 +513,13 @@ right: 1px;
 
 /* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle/index.html# */
 
-.trekutnik {
-  /* width: 20px;
+/* .trekutnik {
+   width: 20px;
   height: 20px;
-  background-color: white; */
+  background-color: white;
   position: absolute;
   bottom: -39%;
-}
+} */
 
 
 /* Элемент | file:///G:/NextCloud/Projects/WORK/Puzzle/index.html# */
@@ -538,5 +538,6 @@ right: 1px;
   /* height: 20px; */
   /* background-color: white; */
   /* bottom: -39%; */
+  position: absolute;
   bottom: -41.5%;
 }
