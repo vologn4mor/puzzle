@@ -1,5 +1,6 @@
 function scrolled() {
   var pageY = window.pageYOffset;
+  console.log(pageY);
   if(pageY > 0 && pageY < 1700) {
     colorMenu(1);
     return;
@@ -18,17 +19,33 @@ function scrolled() {
   }
 }
 
+// function colorMenu(id) {
+//   var menu = document.getElementById('secondBlockMenu').childNodes;
+//   let value = id - 2;
+//   if(id != 1 && menu[value].innerText[0] == "—"){
+//     menu[value].innerText = menu[value].innerText.slice(1);
+//     menu[value].classList.remove('blue');
+//   }
+//   value = id + 2;
+//   if(id != 7 && menu[value].innerText[0] == "—"){
+//     menu[value].innerText = menu[value].innerText.slice(1);
+//     menu[value].classList.remove('blue');
+//   }
+//   if(menu[id].innerText[0] != "—"){
+//     menu[id].innerHTML = "—" + menu[id].innerText;
+//     menu[id].classList.add('blue');
+//   }
+// }
+
 function colorMenu(id) {
   var menu = document.getElementById('secondBlockMenu').childNodes;
-  let value = id - 2;
-  if(id != 1 && menu[value].innerText[0] == "—"){
-    menu[value].innerText = menu[value].innerText.slice(1);
-    menu[value].classList.remove('blue');
-  }
-  value = id + 2;
-  if(id != 7 && menu[value].innerText[0] == "—"){
-    menu[value].innerText = menu[value].innerText.slice(1);
-    menu[value].classList.remove('blue');
+  for(let i = 1; i <=7; i += 2){
+    if(i != id && menu[i].innerText[0] == "—"){
+      menu[i].innerText = menu[i].innerText.slice(1);
+      menu[i].classList.remove('blue');
+      console.log(1);
+    }
+    console.log(2);
   }
   if(menu[id].innerText[0] != "—"){
     menu[id].innerHTML = "—" + menu[id].innerText;
@@ -44,4 +61,20 @@ function randomRotateAndOpacity() {
   document.getElementById('secondLine').style.rotate = Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3) + "deg";
   document.getElementById('thirdLine').style.rotate = Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3) + "deg";
   setTimeout(randomRotateAndOpacity, 1000);
+}
+
+menuFirst.onclick = function () {
+  window.scrollTo(0, 977);
+}
+
+menuSecond.onclick = function() {
+  window.scrollTo(0, 2113);
+}
+
+menuThird.onclick = function() {
+  window.scrollTo(0, 3441);
+}
+
+menuFourth.onclick = function() {
+  window.scrollTo(0, 5999);
 }

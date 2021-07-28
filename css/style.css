@@ -153,6 +153,7 @@ span.blue {
 .secondBlockLeftMenu p{
   margin-bottom: 40px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .gray {
