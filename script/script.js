@@ -78,3 +78,20 @@ menuThird.onclick = function() {
 menuFourth.onclick = function() {
   window.scrollTo(0, 5999);
 }
+
+setTimeout(function(){
+  let preloader = document.getElementById('preloaderLogo').style;
+  preloader.fontSize = '28px';
+  preloader.marginLeft = '94px';
+  preloader.marginTop = '26px';
+  preloader.top = '0';
+  preloader.left = '0';
+}, 1500);
+
+setTimeout(function(){
+  document.getElementById('preloader').style.opacity = '0';
+}, 2000);
+
+setTimeout(function(){
+  document.getElementById('preloader').style.display = 'none';
+}, 2500);

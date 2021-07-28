@@ -528,3 +528,40 @@ right: 1px;
   border-right: 0px solid transparent;
   border-left: 1903px solid white;
 }
+
+
+
+
+
+
+.preloader{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  overflow: hidden;
+  background: black;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.preloaderLogo{
+  font-weight: bold;
+  transition: 0.5s;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 330px;
+  height: 110px;
+  margin-left: -165px;
+  margin-top: -55px;
+    /* background: url('img/prel.gif') no-repeat 50% 50%; */
+    background-size: 200px;
+    z-index: 101;
+    color: white;
+  }
+.loaded .preloader {
+  display: none;
+}
