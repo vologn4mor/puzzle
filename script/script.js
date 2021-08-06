@@ -1,6 +1,5 @@
 function scrolled() {
   var pageY = window.pageYOffset;
-  console.log(pageY);
   if(pageY > 0 && pageY < 1700) {
     colorMenu(1);
     return;
@@ -81,8 +80,22 @@ menuFourth.onclick = function() {
 
 setTimeout(function(){
   let preloader = document.getElementById('preloaderLogo').style;
+  console.log(document.documentElement.clientWidth);
+  let width = document.documentElement.clientWidth;
   preloader.fontSize = '28px';
-  preloader.marginLeft = '94px';
+  if ( width > 1137 ) {
+    preloader.marginLeft = '203px';
+    console.log(3)
+  }
+  if (width > 1036 && width <= 1136){
+    preloader.marginLeft = '103px';
+    console.log(1)
+  }
+  if (width < 1036) {
+    preloader.marginLeft = '63px';
+    console.log(2)
+  }
+
   preloader.marginTop = '26px';
   preloader.top = '0';
   preloader.left = '0';

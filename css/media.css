@@ -203,4 +203,9 @@ font-size: 60px;
 display: none;
 }
 
+.fifthBlockLeftSocial > p:nth-child(3) {
+position: relative;
+left: -70%;
+}
+
 }
