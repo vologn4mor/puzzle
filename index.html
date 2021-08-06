@@ -5,40 +5,65 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Puzzle</title>
+  <link rel="stylesheet" href="font/stylesheet.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="font/stylesheet.css">
+  <link rel="stylesheet" href="css/media.css">
   <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet">
 </head>
 <body onscroll="scrolled()" onload="randomRotateAndOpacity()" id='body'>
-  <div class="preloader" id='preloader'>
+  <!-- <div class="preloader" id='preloader'>
     <div class="preloaderLogo" id='preloaderLogo'>Puzzle</div>
-  </div>
+  </div> -->
   <div class="container">
     <div class="firstBlock parallax">
       <div class="firstBlockTop">
         <div class="firstBlockLeft">
           <p class="logo">Puzzle</p>
+
+
+          <div class="firstBlockButtons">
+            <a href="#">Услуги</a>
+            <a href="#">Портфолио</a>
+            <a href="#">Контакты</a>
+            <a href="#">О нас</a>
+          </div>
         </div>
         <div class="firstBlockRight">
-          <div class="firstBlockButtons">
-            <a href="#">SMM</a>
-            <a href="#">Digital</a>
-            <a href="#">Design</a>
-            <a href="#">Web development</a>
-            <div class="menu">
-              <img src="img/menu.svg" alt="">
+            <p class="firstBlockRightUkr">
+              Укр
+            </p>
+            <p class="firstBlockRightRus selectedLang">
+                Рус
+            </p>
+            <p class="firstBlockRightPhone">
+              +38 (095) 081 37 98
+            </p>
+            <div class="firstBlockRightMenu">
+              <img src="img/headerMenu.svg" alt="">
             </div>
-          </div>
         </div>
       </div>
       <div class="firstBlockMain">
-        <p>100% результата для клиентов</p>
         <h1>Собери свой бизнес вместе с Puzzle Group</h1>
-        <p>Как принято считать, базовые сценарии поведения пользователей, инициированные исключительно синтетически, своевременно верифицированы. Но новая модель организационной деятельности обеспечивает актуальность дальнейших направлений развития!</p>
+        <div class="firstBlockMainCenter">
+          <div class="firstBlockMainCenterFirst">
+            <img src="img/firstBlockIcon1.svg" alt="">
+            <p>Услуги дизайна, создание сайтов</p>
+          </div>
+          <div class="firstBlockMainCenterSecond">
+            <img src="img/firstBlockIcon2.svg" alt="">
+            <p>Продвижение в социальных сетях</p>
+          </div>
+          <div class="firstBlockMainCenterThird">
+            <img src="img/firstBlockIcon3.svg" alt="">
+            <p>Таргетированная, контекстная реклама</p>
+          </div>
+        </div>
+        <p>Соберем все пазлы воедино: комплексно выведем Ваш бизнес на новый уровень</p>
         <div class="firstBlockMainButtons">
           <a href="#">Услуги</a>
-          <a href="#">Оформить заявку</a>
+          <a href="#">Хочу консультацию</a>
         </div>
       </div>
       <div class="trekutnik"></div>
@@ -57,31 +82,31 @@
       <div class="secondBlockRight">
         <h2>Наша цель - <span class="blue">повысить качество</span> вашего бизнеса</h2>
         <div class="secondBlockRight01">
-          <p class="blue bold">01</p>
+          <img src="img/secondBlock01.svg" alt="">
           <div>
             <p class="bold">Полный фарш!</p>
-            <p>Каждый из нас понимает очевидную вещь: дальнейшее развитие различных форм деятельности в значительной степени обусловливает важность глубокомысленных рассуждений. </p>
+            <p>Обеспечим комплексный подход и индивидуальный план развития бизнеса. Выжмем все соки: вместе реализуем стратегию и отпразднуем результаты.</p>
           </div>
         </div>
         <div class="secondBlockRight02">
-          <p class="blue bold">02</p>
+          <img src="img/secondBlock02.svg" alt="">
           <div>
-            <p class="bold">Лучшая команада</p>
-            <p>Равным образом, реализация намеченных плановых заданий требует от нас анализа экономической целесообразности принимаемых решений.</p>
+            <p class="bold">Best of the best</p>
+            <p>Креативная команда молодых специалистов не упустит ваш бизнес из виду. Работаем на результат и выполняем работу качественно.</p>
           </div>
         </div>
         <div class="secondBlockRight03">
-          <p class="blue bold">03</p>
+          <img src="img/secondBlock03.svg" alt="">
           <div>
-            <p class="bold">Цена и качество</p>
-            <p>Ясность нашей позиции очевидна: начало повседневной работы по формированию позиции позволяет оценить значение вывода текущих активов.</p>
+            <p class="bold">Ценник</p>
+            <p>Предлагаем пакеты услуг на любой карман. Получим возможный максимум исходя из бюджета.</p>
           </div>
         </div>
         <div class="secondBlockRight04">
-          <p class="blue bold">04</p>
+          <img src="img/secondBlock04.svg" alt="">
           <div>
             <p class="bold">А можно так?</p>
-            <p>Приятно, граждане, наблюдать, как сделанные на базе интернет-аналитики выводы набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям. </p>
+            <p>Мы вас слушаем и слышим. Учтем все пожелания, проанализируем все предложения и соединим со своим профессионализмом. </p>
           </div>
         </div>
       </div>
@@ -145,23 +170,26 @@
   <div class="fourthBlock">
     <h2 class="fourthBlockOurs">Наши проекты</h2>
     <div class="fourthBlockMain">
+      <div>
       <div class="fourthBlockMainFirst">
         <p class="fourthBlockMainText">/Личный бренд</p>
         <div><img src="img/fourthBlock12.png" alt=""></div>
       </div>
-      <div class="fourthBlockMainSecond">
-        <p class="fourthBlockMainText">/Визитки</p>
-        <div><img src="img/fourthBlock22.png" alt=""></div>
-      </div>
       <div class="fourthBlockMainThird">
         <p class="fourthBlockMainText">/Мобильные версии</p>
         <div><img src="img/fourthBlock32.png" alt=""></div>
-        <a href="#"><div>Смотреть все кейсы</div><img src="img/fourthBlockArrow.svg" alt=""></a>
+        <a href="#"><p>Смотреть все кейсы</p><img src="img/fourthBlockArrow1.svg" alt=""></a>
       </div>
-
+      </div>
+      <div>
+        <div class="fourthBlockMainSecond">
+          <p class="fourthBlockMainText">/Визитки</p>
+          <div><img src="img/fourthBlock22.png" alt=""></div>
+        </div>
       <div class="fourthBlockMainFourth">
         <p class="fourthBlockMainText">/Лендинг</p>
         <div><img src="img/fourthBlock42.png" alt=""></div>
+      </div>
       </div>
     </div>
   </div>
@@ -221,9 +249,12 @@
         <p>Оставьте ваш номер телефона и наш менеджер свяжется с вами в течении дня</p>
       </div>
       <div class="fifthBlockRightDown">
+        <p>Оставьте ваш номер телефона и наш менеджер свяжется с вами в течении дня</p>
+        <div>
         <input type="phone" placeholder="Номер телефона">
         <div class="submitPhone">
           <img src="img/fifthBlockArrow.svg" alt="">
+        </div>
         </div>
       </div>
     </div>

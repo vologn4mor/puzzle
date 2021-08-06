@@ -60,7 +60,7 @@ function randomRotateAndOpacity() {
   document.getElementById('firstLine').style.rotate = Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3) + "deg";
   document.getElementById('secondLine').style.rotate = Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3) + "deg";
   document.getElementById('thirdLine').style.rotate = Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3) + "deg";
-  setTimeout(randomRotateAndOpacity, 1000);
+  setTimeout(randomRotateAndOpacity, 2500);
 }
 
 menuFirst.onclick = function () {
@@ -86,12 +86,12 @@ setTimeout(function(){
   preloader.marginTop = '26px';
   preloader.top = '0';
   preloader.left = '0';
-}, 1500);
-
-setTimeout(function(){
-  document.getElementById('preloader').style.opacity = '0';
 }, 2000);
 
 setTimeout(function(){
-  document.getElementById('preloader').style.display = 'none';
+  document.getElementById('preloader').style.opacity = '0';
 }, 2500);
+
+setTimeout(function(){
+  document.getElementById('preloader').style.display = 'none';
+}, 3000);

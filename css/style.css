@@ -4,12 +4,20 @@
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 li {
   list-style-type: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -18,13 +26,61 @@ li {
 }
 
 .firstBlock {
-  background-image: url(../img/firstBlock.png);
+  background-image: url(../img/firstBlockNew.png);
   height: 1002px;
 }
 
+.firstBlockLeft {
+  display: flex;
+  max-width: 980px;
+  width: 100%;
+  justify-content: space-between;
+}
 .firstBlockTop {
   display: flex;
   justify-content: space-between;
+}
+
+.firstBlockRight p {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 34px;
+  font-size: 18px;
+  margin-left: 20px;
+  height: 30px;
+}
+
+.selectedLang {
+  border-bottom: 3px solid #3335CF;
+}
+
+.firstBlockRightPhone {
+  padding-left: 80px;
+  width: 186px;
+}
+
+.firstBlockMainCenter, .firstBlockMainCenter div {
+display: flex;
+flex-wrap: wrap;
+}
+
+.firstBlockMainCenter>div>p {
+  width: 340px;
+}
+
+.firstBlockMainCenter img {
+  margin-right: 15px;
+}
+
+.firstBlockMainCenter {
+ width: 101%;
+}
+
+.firstBlockMain > h1:nth-child(1) {
+ max-width: 1139px;
+ font-weight: bold;
+ font-size: 80px;
+ line-height: 105px;
 }
 
 .logo {
@@ -32,23 +88,35 @@ li {
   color: white;
   font-weight: bold;
   font-size: 28px;
-  margin-left: 94px;
+  margin-left: 203px;
   margin-top: 26px;
 }
 
 .firstBlockRight {
- background-color: white;
  height: 68px;
  display: flex;
- padding: 0px 100px;
+ padding-right: 100px;
  height: 68px;
+ color: white;
+}
+
+.firstBlockRightMenu {
+  display: none;
+}
+
+.firstBlockCenter {
+margin-top: 44px;
+font-size: 18px;
+line-height: 17px;
 }
 
 .firstBlockButtons {
   display: flex;
   margin: auto 0;
   justify-content: space-between;
-  width: 732px;
+  width: 561px;
+  margin-top: 35px;
+  margin-left: 30px;
 }
 
 .firstBlockMain h1{
@@ -60,9 +128,12 @@ li {
   margin: 0;
 }
 
-.firstBlockMain {
-  max-width: 1139px;
+.firstBlockButtons a{
+ font-weight: 600;
+}
 
+.firstBlockMain {
+  max-width: 1166px;
   margin-left: 200px;
   margin-top: 157px;
   color: white;
@@ -75,12 +146,13 @@ li {
 .firstBlockMain > p:nth-child(3) {
   font-size: 18px;
   line-height: 32px;
+  max-width: 597px;
 }
 
 .firstBlockMainButtons a{
   color: white;
   padding: 22px 66px;
-  border-radius: 6px;
+  border-radius: 20px;
   font-weight: bold;
 }
 
@@ -90,7 +162,7 @@ li {
 }
 
 .firstBlockMainButtons > a:nth-child(2) {
- background-color: #434348;
+ border: 1px solid white;
 }
 
 .firstBlockMainButtons {
@@ -134,11 +206,21 @@ max-width: 1045px;
   color: #3335CF;
 }
 
+.secondBlockRight img {
+max-width: 109px;
+max-height: 109px;
+}
+
+.secondBlockRight>div>div {
+  margin-top: 14px;
+  margin-right: 10px;
+}
+
 .secondBlockRight > h2:nth-child(1) {
   font-size: 55px;
   line-height: 60px;
   font-weight: 600;
-  max-width: 732px;
+  max-width: 752px;
 }
 
 span.blue {
@@ -166,10 +248,6 @@ span.blue {
   z-index: 1;
 }
 
-.secondBlock {
-  float: right;
-}
-
 .secondBlockRight > h2:nth-child(1) {
   margin-top: 0px;
   color: black;
@@ -181,22 +259,22 @@ span.blue {
 }
 
 .secondBlockRight {
-  margin-right: 315px;
   margin-left: 300px;
 }
 
 .containerSticky {
-  height: 4550px;
+  /* height: 4550px; */
+  height: 4432px;
 }
 
 .thirdBlock {
   background-image: url(../img/thirdBlock.png);
   height: 1532px;
+  margin-top: 100px;
+
+  background-repeat: no-repeat;
 }
 
-.thirdBlock {
-margin-top: 900px;
-}
 
 .thirdBlockLines div {
   margin-bottom: 30px;
@@ -228,24 +306,30 @@ margin-top: 900px;
 }
 
 .thirdBlockLines div {
-  transition: 0.5s;
+  transition: 2.5s;
 }
 
 .thirdBlockRight {
   color: white;
-  float: right;
+  /* padding-left: 239px; */
   margin-top: 60px;
-  margin-right: 200px;
+  max-width: 1260px;
+  /* margin-top: 178px;
+  margin-left: 300px;
+  margin-right: auto; */
+  padding-left: 341px;
+  margin: 178px auto;
 }
 
 .thirdBlockList {
   display: flex;
   flex-wrap: wrap;
   max-width: 900px;
+  justify-content: space-between;
 }
 
 .thirdBlockList div{
-  width: 450px;
+  width: 325px;
   height: 320px;
 }
 
@@ -266,7 +350,7 @@ margin-top: 900px;
 }
 
 .thirdBlockList li {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .thirdBlockList ul {
@@ -298,6 +382,7 @@ margin-top: 900px;
 
 .fourthBlockMainThird {
   background-image: url(../img/fourthBlock31.png);
+  margin-top: 70px;
 }
 
 .fourthBlockMainFourth {
@@ -306,7 +391,7 @@ margin-top: 900px;
 
 .fourthBlockMain {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   max-width: 1360px;
 }
 
@@ -320,6 +405,12 @@ margin-top: 900px;
 }
 .fourthBlockMainThird > a:nth-child(3) {
   display: flex;
+  color: black;
+}
+
+.fourthBlockMainThird > a:nth-child(3) > p:nth-child(1) {
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .fourthBlockMainThird > a:nth-child(3) > img:nth-child(2) {
@@ -335,8 +426,8 @@ margin-top: 900px;
 
 .fourthBlockMainText {
   color: white;
-  margin-top: 50px;
-  margin-left: 50px;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 
 .fourthBlockMainFirst > div:nth-child(2) {
@@ -372,7 +463,8 @@ margin-top: 900px;
   flex-direction: column;
   justify-content: end;
   margin: 0 auto;
-  margin-left: 28.5%;
+  /* margin-left: 28.5%; */
+  padding-left: 23%;
 }
 
 .fifthBlock p, h2{
@@ -444,15 +536,7 @@ margin-top: 900px;
   font-size: 70px;
   line-height: 90px;
   font-weight: 600;
-  max-width: 479px;
-  margin-left: 100px;
-}
-
-.fifthBlockRightUp > h2:nth-child(1) {
-  font-size: 70px;
-  line-height: 90px;
-  font-weight: 600;
-  max-width: 479px;
+  width: 479px;
   margin-left: 100px;
 }
 
@@ -509,6 +593,7 @@ right: 1px;
  font-size: 16px;
  line-height: 15px;
  margin-top: 55px;
+ margin-bottom: 0px;
 }
 
 .parallax {
@@ -521,18 +606,26 @@ right: 1px;
 
 .trekutnik {
   height: 10px;
-  position: relative;
-  top: 155.6px;
+  /* position: relative;
+  top: 155.6px; */
+  position: absolute;
+  top: 825px;
   border: 170px solid transparent;
   border-bottom: 0px solid transparent;
   border-right: 0px solid transparent;
   border-left: 1903px solid white;
 }
 
+.fifthBlockRightDown > p:nth-child(1) {
+display: none;
+}
 
+.fifthBlockRightDown > div:nth-child(2) {
+  display: flex;
+  justify-content: space-around;
+  width: 570px;
 
-
-
+}
 
 .preloader{
   position: fixed;
