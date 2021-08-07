@@ -1,6 +1,7 @@
 @media (max-width: 1767px) {
   .fourthBlock {
     transform: scale(0.9) translate(-4.5%, 18% );
+    -webkit-transform: scale(0.9) translate(-4.5%, -18% );
     height: 1300px;
   }
   .fifthBlockRightDown {
@@ -27,6 +28,7 @@
 @media (max-width: 1548px) {
   .fourthBlock {
     transform: scale(0.8) translate(-7%, 20% );
+    -webkit-transform: scale(0.8) translate(-4.5%, -20% );
     height: 1150px;
   }
 }
@@ -34,10 +36,11 @@
 @media (max-width: 1485px) {
   .fourthBlock {
     transform: scale(0.7) translate(-7%, 30% );
+    -webkit-transform: scale(0.7) translate(-7%, -30% );
     height: 1050px;
   }
   .containerSticky {
-    height: 3755px;
+    height: 3600px;
   }
 }
 
@@ -72,6 +75,7 @@
   .fourthBlock {
     height: 900px;
     transform: scale(0.6) translate(-7%, 50% );
+    -webkit-transform: scale(0.6) translate(-7%, -50% );
   }
 }
 
@@ -141,6 +145,7 @@
   }
   .fourthBlock {
     transform: scale(0.6) translate(-45%, 60% );
+    -webkit-transform: scale(0.6) translate(-45%, -60% );
     height: 800px;
     padding-left: 25%;
   }
