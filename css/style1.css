@@ -1,7 +1,6 @@
 * {
   font-family: 'Gotham Pro';
   font-weight: 300;
-  /* overflow-y: hidden; */
 }
 
 a {
@@ -14,33 +13,22 @@ li {
 }
 
 body {
-  /* overflow-y: auto; */
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
-  /* overflow-y: visible;
-  overflow-x: scroll; */
 }
 
 .container {
   max-width: 1920px;
   margin: 0 auto;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .firstBlock {
   background-image: url(../img/firstBlockNew.png);
   height: 1002px;
-  overflow: hidden;
-}
-
-.thirdBlockLines {
-overflow: hidden;
-}
-.fifthBlock {
-overflow-x: hidden;
 }
 
 .firstBlockLeft {
@@ -268,7 +256,7 @@ span.blue {
 
 .secondBlockLeftMenu {
   max-width: 200px;
-  margin-left: 100px;
+  margin-left: 60px;
 }
 
 .secondBlockRight {
@@ -276,7 +264,8 @@ span.blue {
 }
 
 .containerSticky {
-  height: 4343px;
+  /* height: 4550px; */
+  height: 4338px;
 }
 
 .thirdBlock {
@@ -338,10 +327,6 @@ span.blue {
   flex-wrap: wrap;
   max-width: 900px;
   justify-content: space-between;
-}
-
-.thirdBlockQuestion {
-  display: none;
 }
 
 .thirdBlockList div{
@@ -419,20 +404,17 @@ span.blue {
 .fourthBlockMainSecond, .fourthBlockMainFourth {
   margin-top: 70px;
 }
-.fourthBlockMainFourth > a:nth-child(3) {
+.fourthBlockMainThird > a:nth-child(3) {
   display: flex;
   color: black;
-  position: relative;
-  right: 680px;
-  top: 8px;
 }
 
-.fourthBlockMainFourth > a:nth-child(3) > p:nth-child(1) {
+.fourthBlockMainThird > a:nth-child(3) > p:nth-child(1) {
   font-size: 22px;
   font-weight: 400;
 }
 
-.fourthBlockMainFourth > a:nth-child(3) > img:nth-child(2) {
+.fourthBlockMainThird > a:nth-child(3) > img:nth-child(2) {
   margin-left: 15px;
 }
 
@@ -580,7 +562,6 @@ input[type=phone] {
   border: 0px solid white;
   outline: none;
   color: white;
-  margin: 1px 0;
 }
 
 input[type=phone]:focus {
@@ -594,7 +575,6 @@ input[type=phone]:focus {
 background-color: #3335CF;
 position: relative;
 right: 1px;
-top: -1px;
 }
 
 .fifthBlockRightDown {
@@ -626,15 +606,13 @@ top: -1px;
 }
 
 .trekutnik {
-  height: 36px;
-  /* position: relative;
-  top: 155.6px; */
-  position: absolute;
-  top: 825px;
+  height: 11px;
+  position: relative;
+  top: 175px;
   border: 170px solid transparent;
   border-bottom: 0px solid transparent;
   border-right: 0px solid transparent;
-  border-left: 1903px solid white;
+  border-left: 1920px solid white;
 }
 
 .fifthBlockRightDown > p:nth-child(1) {
@@ -725,25 +703,4 @@ display: none;
 #firstLineCircle, #secodLineCircle {
   transition-property: opacity;
   transition-duration: 0.6s;
-}
-
-
-.trekutnik {
-  height: 36px;
-  position: relative;
-  top: 175px;
-  border: 170px solid transparent;
-  border-bottom: 0px solid transparent;
-  border-right: 0px solid transparent;
-  border-left: 1920px solid white;
-}
-
-.toUpButton {
-  display: none;
-  cursor: pointer;
-}
-
-#toUpButtonBottom {
-  display: none;
-  cursor: pointer;
 }

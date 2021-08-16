@@ -1,22 +1,22 @@
-function scrolled() {
-  var pageY = window.pageYOffset;
-  if(pageY > 0 && pageY < 1700) {
-    colorMenu(1);
-    return;
-  }
-  if(pageY > 1700 && pageY < 3200){
-    colorMenu(3);
-    return;
-  }
-  if(pageY > 3200 && pageY < 5000){
-    colorMenu(5);
-    return;
-  }
-  if(pageY > 5000){
-    colorMenu(7);
-    return;
-  }
-}
+// function scrolled() {
+//   var pageY = window.pageYOffset;
+//   if(pageY > 0 && pageY < 1700) {
+//     colorMenu(1);
+//     return;
+//   }
+//   if(pageY > 1700 && pageY < 3200){
+//     colorMenu(3);
+//     return;
+//   }
+//   if(pageY > 3200 && pageY < 5000){
+//     colorMenu(5);
+//     return;
+//   }
+//   if(pageY > 5000){
+//     colorMenu(7);
+//     return;
+//   }
+// }
 
 // function colorMenu(id) {
 //   var menu = document.getElementById('secondBlockMenu').childNodes;
@@ -36,21 +36,21 @@ function scrolled() {
 //   }
 // }
 
-function colorMenu(id) {
-  var menu = document.getElementById('secondBlockMenu').childNodes;
-  for(let i = 1; i <=7; i += 2){
-    if(i != id && menu[i].innerText[0] == "—"){
-      menu[i].innerText = menu[i].innerText.slice(1);
-      menu[i].classList.remove('blue');
-      console.log(1);
-    }
-    console.log(2);
-  }
-  if(menu[id].innerText[0] != "—"){
-    menu[id].innerHTML = "—" + menu[id].innerText;
-    menu[id].classList.add('blue');
-  }
-}
+// function colorMenu(id) {
+//   var menu = document.getElementById('secondBlockMenu').childNodes;
+//   for(let i = 1; i <=7; i += 2){
+//     if(i != id && menu[i].innerText[0] == "—"){
+//       menu[i].innerText = menu[i].innerText.slice(1);
+//       menu[i].classList.remove('blue');
+//       console.log(1);
+//     }
+//     console.log(2);
+//   }
+//   if(menu[id].innerText[0] != "—"){
+//     menu[id].innerHTML = "—" + menu[id].innerText;
+//     menu[id].classList.add('blue');
+//   }
+// }
 
 function randomRotateAndOpacity() {
   document.getElementById('firstLine').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
@@ -59,24 +59,41 @@ function randomRotateAndOpacity() {
   document.getElementById('firstLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
   document.getElementById('secondLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
   document.getElementById('thirdLine').style.transform = "rotate(" + (Math.floor(Math.random() * (3 - (-3) + 1) ) + (-3)) + "deg)";
+
+  coords = (Math.floor(Math.random() * (3 - 2 + 1)) + 2);
+  document.getElementById('secodLineCircle').style.top =  document.getElementById('secodLineCircle').style.left =
+  document.getElementById('firstLineCircle').style.top =  document.getElementById('firstLineCircle').style.left = -(coords - 1) + "px";
+  document.getElementById('secodLineCircle').style.border = document.getElementById('firstLineCircle').style.border = coords + "px solid #3335CF";
+
+   document.getElementById('firstLineCircle').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
+   document.getElementById('secodLineCircle').style.opacity = Math.floor(Math.random() * (1 - 0.2 + 1) ) + 0.2;
+
   setTimeout(randomRotateAndOpacity, 2500);
 }
 
-menuFirst.onclick = function () {
-  window.scrollTo(0, 977);
+toUpButtonBottom.onclick = function () {
+  window.scrollTo(0, 0)
 }
 
-menuSecond.onclick = function() {
-  window.scrollTo(0, 2113);
+toUpButton.onclick = function () {
+  window.scrollTo(0, 0)
 }
 
-menuThird.onclick = function() {
-  window.scrollTo(0, 3441);
-}
-
-menuFourth.onclick = function() {
-  window.scrollTo(0, 5999);
-}
+// menuFirst.onclick = function () {
+//   window.scrollTo(0, 977);
+// }
+//
+// menuSecond.onclick = function() {
+//   window.scrollTo(0, 2113);
+// }
+//
+// menuThird.onclick = function() {
+//   window.scrollTo(0, 3441);
+// }
+//
+// menuFourth.onclick = function() {
+//   window.scrollTo(0, 5999);
+// }
 
 setTimeout(function(){
   let preloader = document.getElementById('preloaderLogo').style;
@@ -93,6 +110,10 @@ setTimeout(function(){
   }
   if (width < 1036) {
     preloader.marginLeft = '63px';
+    console.log(2)
+  }
+  if (width < 457) {
+    preloader.marginLeft = '33px';
     console.log(2)
   }
 

@@ -11,17 +11,16 @@
   <link rel="stylesheet" href="css/media.css">
   <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet">
 </head>
-<body onscroll="scrolled()" onload="randomRotateAndOpacity()" id='body'>
+<body onload="randomRotateAndOpacity()" id='body'>
   <div class="preloader" id='preloader'>
     <div class="preloaderLogo" id='preloaderLogo'>Puzzle</div>
   </div>
   <div class="container">
     <div class="firstBlock parallax">
+      <div>
       <div class="firstBlockTop">
         <div class="firstBlockLeft">
           <p class="logo">Puzzle</p>
-
-
           <div class="firstBlockButtons">
             <a href="#">Услуги</a>
             <a href="#">Портфолио</a>
@@ -43,6 +42,7 @@
               <img src="img/headerMenu.svg" alt="">
             </div>
         </div>
+      </div>
       </div>
       <div class="firstBlockMain">
         <h1>Собери свой бизнес вместе с Puzzle Group</h1>
@@ -71,10 +71,18 @@
     <div class="containerSticky">
       <div class="secondBlockLeft">
         <div class="secondBlockLeftMenu" id="secondBlockMenu">
-          <p class="boldMenu" id="menuFirst">Что мы делаем?</p>
-          <p class="boldMenu" id="menuSecond">Наши услуги</p>
-          <p class="boldMenu" id="menuThird">Портфолио</p>
-          <p class="boldMenu" id="menuFourth">Оформить заявку</p>
+          <div class="toUpButton" id='toUpButton'>
+            На верх
+          </div>
+          <div class="circleContainer">
+            <div id="firstLineCircle"></div>
+              <div id="secodLineCircle"></div>
+                <div id="circle">
+                  <p id="circleQuestion">ПОЯВИЛСЯ ВОПРОС?</p>
+                </div>
+
+
+          </div>
         </div>
       </div>
     <div class="secondBlock">
@@ -165,6 +173,9 @@
         <img src="img/thirdBlockPhoto.png" alt="">
       </div>
       </div>
+      <div id="circle" class="thirdBlockQuestion">
+        <p id="circleQuestion">ПОЯВИЛСЯ ВОПРОС?</p>
+      </div>
     </div>
   </div>
   <div class="fourthBlock">
@@ -178,7 +189,6 @@
       <div class="fourthBlockMainThird">
         <p class="fourthBlockMainText">/Мобильные версии</p>
         <div><img src="img/fourthBlock32.png" alt=""></div>
-        <a href="#"><p>Смотреть все кейсы</p><img src="img/fourthBlockArrow1.svg" alt=""></a>
       </div>
       </div>
       <div>
@@ -189,12 +199,15 @@
       <div class="fourthBlockMainFourth">
         <p class="fourthBlockMainText">/Лендинг</p>
         <div><img src="img/fourthBlock42.png" alt=""></div>
+        <a href="#"><p>Смотреть все кейсы</p><img src="img/fourthBlockArrow1.svg" alt=""></a>
       </div>
       </div>
     </div>
   </div>
   <div class="fifthBlock">
+  <div class="toUpButton" id='toUpButtonBottom'>На верх</div>
     <div class="fifthBlockMain">
+
     <div class="fifthBlockLeft">
       <div class="fifthBlockLeftUp">
         <img src="img/fifthBlockCompany.png" alt="">
@@ -239,7 +252,9 @@
               </a>
             </div>
           </div>
+
           <p>© Puzzle group 2021</p>
+
         </div>
       </div>
     </div>
