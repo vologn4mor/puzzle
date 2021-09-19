@@ -9,9 +9,41 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
-  <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet">
+  <!-- <link href="http://fonts.cdnfonts.com/css/gotham-pro" rel="stylesheet"> -->
+  <script src="script/jquery.js"></script>
 </head>
 <body onload="randomRotateAndOpacity()" id='body'>
+  <div class="menu">
+  <div class="menuTop">
+    <div class="menuTopLeft">
+      <p>Puzzle</p>
+    </div>
+    <div class="menuTopRight">
+      <p class='menuClose'>X</p>
+    </div>
+  </div>
+  <div class="menuCenter">
+    <p>Услуги</p>
+    <a href="#">SMM</a>
+    <a href="#">Design</a>
+    <a href="#">Web development</a>
+    <a href="#">Digital</a>
+    <a href="#">Портфолио</a>
+    <a href="#">Контакты</a>
+    <a href="#">О нас</a>
+    <div class="languages">
+      <p class="ukr">УКР</p>
+      <p class="rus blueLang">РУС</p>
+    </div>
+  </div>
+  <div class="menuBottom">
+    <div class="menuSocials">
+      <a href="#"><div><img src="img/instagram.svg" alt=""></div></a>
+      <a href="#"><div><img src="img/facebook.svg" alt=""></div></a>
+      <a href="#"><div><img src="img/behance.svg" alt=""></div></a>
+    </div>
+  </div>
+  </div>
   <div class="preloader" id='preloader'>
     <div class="preloaderLogo" id='preloaderLogo'>Puzzle</div>
   </div>
@@ -36,7 +68,7 @@
                 Рус
             </p>
             <p class="firstBlockRightPhone">
-              +38 (095) 081 37 98
+               <a href="tel:+380950813798">+38 (095) 081 37 98</a>
             </p>
             <div class="firstBlockRightMenu">
               <img src="img/headerMenu.svg" alt="">
@@ -88,7 +120,7 @@
     <div class="secondBlock">
 
       <div class="secondBlockRight">
-        <h2>Наша цель - <span class="blue">повысить качество</span> вашего бизнеса</h2>
+        <h2>Наша цель - <span class="blue">повысить качество</span> Вашего бизнеса</h2>
         <div class="secondBlockRight01">
           <img src="img/secondBlock01.svg" alt="">
           <div>
@@ -182,27 +214,63 @@
     <h2 class="fourthBlockOurs">Наши проекты</h2>
     <div class="fourthBlockMain">
       <div>
-      <div class="fourthBlockMainFirst">
+      <div class="fourthBlockMainFirst classHover" id="fourthBlockMainFirst">
         <p class="fourthBlockMainText">/Личный бренд</p>
-        <div><img src="img/fourthBlock12.png" alt=""></div>
+        <div class="fourthBlockMainFirstImg" id="fourthBlockMainFirstImg">
+          <img src="img/fourthBlock12.png" alt="">
+        </div>
+        <div class="fourthBlockMainFirstDiv">
+          <h2 class="h2FourthBlock">Dmytry Taran</h2>
+          <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
+А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
+        <a href="#" class="aFourthBlock">Смотреть кейс</a>
+        </div>
       </div>
-      <div class="fourthBlockMainThird">
+      <div class="fourthBlockMainThird classHover" id="fourthBlockMainThird">
         <p class="fourthBlockMainText">/Мобильные версии</p>
-        <div><img src="img/fourthBlock32.png" alt=""></div>
+        <div class="fourthBlockMainFirstImg">
+          <img src="img/fourthBlock32.png" alt="">
+        </div>
+        <div class="fourthBlockMainFirstDiv">
+          <h2 class="h2FourthBlock">Dmytry Taran</h2>
+          <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
+А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
+        <a href="#" class="aFourthBlock">Смотреть кейс</a>
+        </div>
       </div>
       </div>
       <div>
-        <div class="fourthBlockMainSecond">
+        <div class="fourthBlockMainSecond classHover" id="fourthBlockMainSecond">
           <p class="fourthBlockMainText">/Визитки</p>
-          <div><img src="img/fourthBlock22.png" alt=""></div>
+          <div class="fourthBlockMainFirstImg">
+            <img src="img/fourthBlock22.png" alt="">
+          </div>
+          <div class="fourthBlockMainFirstDiv">
+            <h2 class="h2FourthBlock">Dmytry Taran</h2>
+            <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+  Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
+  А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
+          <a href="#" class="aFourthBlock">Смотреть кейс</a>
         </div>
-      <div class="fourthBlockMainFourth">
+        </div>
+      <div class="fourthBlockMainFourth classHover" id="fourthBlockMainFourth">
         <p class="fourthBlockMainText">/Лендинг</p>
-        <div><img src="img/fourthBlock42.png" alt=""></div>
-        <a href="#"><p>Смотреть все кейсы</p><img src="img/fourthBlockArrow1.svg" alt=""></a>
+        <div class="fourthBlockMainFirstImg">
+          <img src="img/fourthBlock42.png" alt="">
+        </div>
+        <div class="fourthBlockMainFirstDiv">
+          <h2 class="h2FourthBlock">Dmytry Taran</h2>
+          <p class="pFourthBlock">Прежде всего, курс на <br> социально-ориентированный национальный проект создаёт предпосылки для экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+Значимость этих проблем настолько очевидна, что перспективное планирование, в своём классическом представлении, допускает внедрение приоритизации разума над эмоциями. <br><br>
+А ещё стремящиеся вытеснить традиционное производство, нанотехнологии могут быть в равной степени предоставлены сами себе.</p>
+        <a href="#" class="aFourthBlock">Смотреть кейс</a>
       </div>
       </div>
     </div>
+  </div>
+  <a href="#" class="checkAllCases"><p>Смотреть все кейсы</p><img src="img/fourthBlockArrow1.svg" alt=""></a>
   </div>
   <div class="fifthBlock">
   <div class="toUpButton" id='toUpButtonBottom'>На верх</div>
@@ -217,7 +285,8 @@
           <h2>Контакты</h2>
           <div class="vodafone">
             <img src="img/vodafone.svg" alt="">
-            <p>+38 (095) 081 37 98</p>
+            <!-- <p>+38 (095) 081 37 98</p> -->
+            <a href="tel:+380950813798">+38 (095) 081 37 98</a>
           </div>
           <div class="email">
             <img src="img/gmail.svg" alt="">
@@ -236,7 +305,7 @@
             <div class="tiktok">
               <a href="#">
                 <img src="img/tiktok.svg" alt="">
-                <p>TikTok</p>
+                <p>Telegram</p>
               </a>
             </div>
             <div class="facebook">
@@ -261,15 +330,19 @@
     <div class="fifthBlockRight">
       <div class="fifthBlockRightUp">
         <h2><span class="blue">Мы лучшая</span> команда для воплощения ваших идей</h2>
-        <p>Оставьте ваш номер телефона и наш менеджер свяжется с вами в течении дня</p>
+        <p>Оставьте номер мобильного телефона и наш менеджер свяжется с Вами в течении дня</p>
       </div>
       <div class="fifthBlockRightDown">
-        <p>Оставьте ваш номер телефона и наш менеджер свяжется с вами в течении дня</p>
+        <p>Оставьте номер мобильного телефона и наш менеджер свяжется с Вами в течении дня</p>
         <div>
-        <input type="phone" placeholder="Номер телефона">
-        <div class="submitPhone">
-          <img src="img/fifthBlockArrow.svg" alt="">
-        </div>
+        <form action="mailAndTelegram.php" method="POST">
+          <div class="inputPhone">
+            <input type="phone" placeholder="Номер телефона" name='user_phone'>
+          </div>
+          <div class="submitPhone" onclick="this.parentNode.submit()">
+            <img src="img/fifthBlockArrow.svg" alt="">
+          </div>
+        </form>
         </div>
       </div>
     </div>

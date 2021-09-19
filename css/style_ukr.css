@@ -1,0 +1,3 @@
+.firstBlockMain > h1:nth-child(1) {
+max-width: 1000px;
+}
