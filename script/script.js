@@ -13,9 +13,9 @@ $(function(){
       return false;
     });
     if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
-      if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
+      // if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
         $('.parallax').css({'background-attachment':'inherit'})
-      }
+      // }
       var winHeight = $(window).height();
       var target1 = $('#fourthBlockMainFirst');
       var targetPos1 = target1.offset().top + 400;
@@ -197,10 +197,12 @@ $(function(){
     $('.firstBlockRightMenu').click(function(){
       $('.menu').css('display', 'block');
       $('.container').css({'-webkit-filter': 'blur(5px)', 'filter': 'blur(5px)'})
+      $('html').css('overflow-y','hidden');
     });
     $('.menuClose').click(function(){
       $('.menu').css('display', 'none');
       $('.container').css({'-webkit-filter': 'blur(0px)', 'filter': 'blur(0px)'})
+      $('html').css('overflow-y','auto');
     });
 })
 
