@@ -43,6 +43,16 @@ overflow: hidden;
 overflow-x: hidden;
 }
 
+.firstBlockButtons a:hover {
+  border-bottom: 5px solid white;
+  transition: 0.5s;
+}
+
+.firstBlockButtons a{
+  transition: 0.5s;
+}
+
+
 .firstBlockLeft {
   display: flex;
   max-width: 980px;
@@ -407,7 +417,6 @@ span.blue {
 
 .fourthBlockMainThird {
   background-image: url(../img/fourthBlock31.png);
-  margin-top: 70px;
 }
 
 .fourthBlockMainFourth {
@@ -421,19 +430,21 @@ span.blue {
 }
 
 .fourthBlockMain>div {
-  margin-bottom: 100px;
-  margin-right: 100px;
+  margin-bottom: 50px;
+  /* margin-right: 100px; */
 }
 
 .fourthBlockMainSecond, .fourthBlockMainFourth {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .checkAllCases {
   display: flex;
   color: black;
   position: relative;
-  top: -130px;
-  left: 125px;
+  /* top: -130px;
+  left: 125px; */
+  top: -85px;
+  left: 0px;
 }
 
 .checkAllCases p {
@@ -901,9 +912,6 @@ margin-bottom: 35px;
 .menuCenter a:nth-child(-n+5) {
   margin-bottom: 25px;
 }
-/* .menuCenter a:nth-child(5) {
-  margin-bottom: 100px;
-} */
 
 .menuCenter a:nth-last-child(-n+4){
   font-weight: 700;
@@ -914,4 +922,21 @@ margin-bottom: 15px;
 
 .blueLang {
   color: #3335CF;
+}
+
+.fourthBlockMain {
+flex-wrap: wrap;
+}
+
+.fourthBlockMain {
+margin: 0 auto;
+}
+
+.fourthBlockMain > div:nth-child(2n+1) {
+  margin-bottom: 50px;
+  margin-right: 100px;
+}
+
+.fourthBlockMainFirstDiv {
+  margin: 52px 32px;
 }

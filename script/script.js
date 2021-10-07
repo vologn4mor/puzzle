@@ -16,6 +16,7 @@ $(function(){
       // if(/iPhone|iPad|iPod/i.test(navigator.userAgent)){
         $('.parallax').css({'background-attachment':'inherit'})
       // }
+      $('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'css/media_mobile.css') );
       var winHeight = $(window).height();
       var target1 = $('#fourthBlockMainFirst');
       var targetPos1 = target1.offset().top + 400;
@@ -128,13 +129,14 @@ $(function(){
       $('.fifthBlockLeftContacts h2').text('Контакти');
       $('.fifthBlockLeftSocial h2').text('Социальні мережі');
       $('.inputPhone').html('<input type="phone" placeholder="Номер телефону" name="user_phone">');
+      $('html').css('overflow-y','auto');
     };
     var translateToRus = function(){
     $('.menu').css('display', 'none');
     $('.languages').children().eq(0).removeClass('blueLang');
     $('.languages').children().eq(1).addClass('blueLang');
+    $('.firstBlockMain h1').css('max-width', '1133px')
     $('.container').css({'-webkit-filter': 'blur(0px)', 'filter': 'blur(0px)'})
-    $('.firstBlockMain h1').css('max-width', '855px');
     $('.firstBlockRightUkr').removeClass('selectedLang');
     $('.firstBlockRightRus').addClass('selectedLang');
     $('.firstBlockButtons').children().eq(0).text('Услуги');
@@ -188,6 +190,7 @@ $(function(){
     $('.fifthBlockLeftContacts h2').text('Контакты');
     $('.fifthBlockLeftSocial h2').text('Социальные сети');
     $('.inputPhone').html('<input type="phone" placeholder="Номер телефона" name="user_phone">');
+    $('html').css('overflow-y','auto')
   };
     $('.firstBlockRightUkr').click(translateToUkr);
     $('.firstBlockRightRus').click(translateToRus);
